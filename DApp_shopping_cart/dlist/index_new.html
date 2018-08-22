@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Mango Magic</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/urku-ico.svg">
+    <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
+    <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
+    <link rel="stylesheet" href="assets/css/urku.css">
+    <link rel="stylesheet" type="text/css" href="css/short.css">
+  </head>
+  <body class="top-fixed">
+    <header class="ae-container-fluid ae-container-fluid--full rk-header ">
+      <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
+      <label for="mobile-menu">
+        <svg>
+          <use xlink:href="assets/img/symbols_simple.svg#bar"></use>
+        </svg>
+        <svg>
+          <use xlink:href="assets/img/symbols_simple.svg#bar"></use>
+        </svg>
+        <svg>
+          <use xlink:href="assets/img/symbols_simple.svg#bar"></use>
+        </svg>
+      </label>
+      <div class="ae-container-fluid rk-topbar">
+        <h1 class="rk-logo"><a href="index.html">Mango's Shop<sup>tm</sup></a></h1>
+        <nav class="rk-navigation">
+          <ul class="rk-menu">
+            <li class="active rk-menu__item"><a href="index.html" class="rk-menu__link">Home</a>
+            </li>
+            <li class="rk-menu__item log_show"><a href="item_post.html" class="rk-menu__link">POST</a>
+            </li>
+            <li class="rk-menu__item log_show"><a href="item_cart.html" class="rk-menu__link">My Cart</a>
+            </li>
+            <li class="rk-menu__item log_show"><a id ="user_name" class="rk-menu__link divout">Email</a>
+            </li>
+            <li class="rk-menu__item log_show"><a class="rk-menu__link" href="javascript:logout()">Logout</a>
+            </li>
+            <li class="rk-menu__item log_hide"><a href="login.html" class="rk-menu__link">Login/Signup</a>
+            </li>
+          </ul>
+          <form class="rk-search">
+            <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
+            <label for="urku-search">
+              <svg>
+                <use xlink:href="assets/img/symbols_simple.svg#icon-search">
+                </use>
+              </svg>
+            </label>
+          </form>
+        </nav>
+      </div>
+    </header>
+    <section class="ae-container-fluid rk-main">
+      <div class="ae-grid", id ="ProductResults">
+         <!-- first column -->
+        <!--  <div class="ae-grid__item item-lg-4">
+           <a href="item-url" class="rk-item">
+             <img src="assets/img/women.jpg" />
+             <span class="item-meta">
+               <h2>Women</h2>
+               <p>Category</p>
+             </span>
+           </a>
+         </div> -->
+      </div>
+    </section>
+    <footer class="ae-container-fluid rk-footer ">
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
+          <ul class="rk-menu rk-footer-menu">
+            <li class="rk-menu__item"><a href="Home.html" class="rk-menu__link">About</a>
+            </li>
+            <li class="rk-menu__item"><a href="Home.html" class="rk-menu__link">Docs</a>
+            </li>
+            <li class="rk-menu__item"><a href="Home.html" class="rk-menu__link">Contact</a>
+            </li>
+          </ul>
+          <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">2018 MANGO MAGIC </span>All Right Reserved.</p>
+        </div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center"><a href="#0" class="rk-social-btn ">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
+            </svg></a><a href="#0" class="rk-social-btn ">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
+            </svg></a><a href="#0" class="rk-social-btn ">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
+            </svg></a><a href="#0" class="rk-social-btn ">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-tumblr"></use>
+            </svg></a></div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
+          <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder"> <a href="#0" class="rk-dark-color ">z5084069@ad.unsw.edu.auu </a></span></p>
+          <p class="rk-footer__text rk-footer__by">Theme by <a href="http://pixeden.com" class="ae-u-bolder">Walter.</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="assets/js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main_login.js"></script>
+<!--     <script type="text/javascript">
+      $("#ProductResults").append("<div>111</div>");
+      console.log("start jquery")
+    </script> -->
+  </body>
+</html>

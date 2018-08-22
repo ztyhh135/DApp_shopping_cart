@@ -1,0 +1,45 @@
+<html>
+<head>
+      <title>Firebase Login</title>
+      <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+      <ul class="tabs" id="tabs01">
+          <li><a href="javascript:void(0)" >SignUp</a></li>
+          <li><a href="javascript:void(0)" class="current selected">LogIn</a></li>
+      </ul>
+      <div class="container" id="container01">
+          <div id="signup_div" class="main-div con">
+            <h3>Create a new account</h3>
+            <input type="email" placeholder="Email" id="new_email_field" />
+            <input type="password" placeholder="Password" id="new_password_field" />
+            <input type="address" placeholder="Ethereum address" id="ethereum_address" />
+            <button onclick="signupWithEmail()">Sign up</button>
+          </div>
+          <div id="login_div" class="main-div con">
+            <h3>Log In</h3>
+            <input type="email" placeholder="Email" id="email_field" />
+            <input type="password" placeholder="Password" id="password_field" />
+            <button onclick="login()">Login to Account</button>
+            <p>
+             <a href="javascript:forget()">forgot password?</a>
+            </p>
+          </div>
+      </div>
+       <div id="forgot_div" class="main-div con">
+            <h3>Send email for reset password</h3>
+            <input type="email" placeholder="Email" id="email_forget" />
+            <button onclick="Send()">Send</button>
+       </div>
+      <div id="user_div" class="loggedin-div">
+        <h3>Welcome User</h3>
+        <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+        <button onclick="logout()">Logout</button>
+      </div> 
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/login_main.js"></script>

@@ -1,0 +1,65 @@
+/*personal center style*/
+.Pt_list_ul li{
+	list-style: none;
+	position: relative;
+	background-color: white;
+	border-top: 1px dotted gray;
+	padding-bottom: 1em;
+	height: 9em;
+}
+.Pt_list_ul li:last-child{
+		border-bottom: 1px dotted gray;
+}
+
+.list_img{
+	position: absolute;
+    top: 15px;
+    left: 2px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.list_img img{height: 100%;}
+.list_detail{
+	height: 100%;
+    margin-left: 27%;
+    background-color: white;
+    position: relative;
+}
+.list_detail h3{
+	color: black;
+	text-align: left;
+	font-style: 12px;
+	margin-bottom:2px;
+}
+.list_detail a{
+	position: absolute;
+	margin: 5px;
+	padding: 2px 4px;
+    color: white;
+    background: black;
+    top: 3em;
+	left: 0em;
+}
+.list_detail a:last-child{
+    top: 3em;
+    left: 5em;
+}
+.list_detail p{
+	text-align: -webkit-auto;
+	margin:0px;
+}
+.time{
+	position: absolute;
+    top: 7em;}
+.post_a{position: absolute; left: 27%; top: 3em;}
+.main_div{display: none;}
+#cancel{top: 5em;
+    left: 17em;}
+#confirm{top: 2em;
+left: 17em;}
+
+#status{
+	position: absolute;
+	top: 4em;
+left: 17em;}

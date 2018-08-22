@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Mango Magic</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/urku-ico.svg">
+    <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
+    <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
+    <link rel="stylesheet" href="assets/css/urku.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/item_shop.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/resetcss.css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+  </head>
+  <body class="top-fixed">
+    <header class="ae-container-fluid ae-container-fluid--full rk-header ">
+      <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
+      <label for="mobile-menu">
+        <svg>
+          <use xlink:href="assets/img/symbols_simple.svg#bar"></use>
+        </svg>
+        <svg>
+          <use xlink:href="assets/img/symbols_simple.svg#bar"></use>
+        </svg>
+        <svg>
+          <use xlink:href="assets/img/symbols_simple.svg#bar"></use>
+        </svg>
+      </label>
+      <div class="ae-container-fluid rk-topbar">
+        <h1 class="rk-logo"><a href="index.html">Mango's Shop<sup>tm</sup></a></h1>
+        <nav class="rk-navigation">
+          <ul class="rk-menu">
+            <li class="active rk-menu__item"><a href="index.html" class="rk-menu__link">Home</a>
+            </li>
+            <li class="rk-menu__item log_show"><a href="item_post.html" class="rk-menu__link">POST</a>
+            </li>
+            <li class="rk-menu__item log_show"><a href="item_cart.html" class="rk-menu__link">My Cart</a>
+            </li>
+            <li class="rk-menu__item log_show"><a id ="user_name" class="rk-menu__link divout">Email</a>
+            </li>
+            <li class="rk-menu__item log_show"><a class="rk-menu__link" href="javascript:logout()">Logout</a>
+            </li>
+            <li class="rk-menu__item log_hide"><a href="login.html" class="rk-menu__link">Login/Signup</a>
+            </li>
+          </ul>
+<!--           <form class="rk-search">
+            <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
+            <label for="urku-search">
+              <svg>
+                <use xlink:href="assets/img/symbols_simple.svg#icon-search">
+                </use>
+              </svg>
+            </label>
+          </form> -->
+          <div class="search bar5">
+            
+              <input id="search" type="text" placeholder="please input keywords...">
+              <button id="search_button" type="submit"></button>
+            
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="ae-container-fluid rk-main">
+	  <div class="ae-container-fluid ae-container-fluid--inner">
+	  	<div class="ae-grid mid-post">
+	      <div id="imags">
+	             <div id="bigimgs">
+	                 <ul>
+	                     <li><img id = "image_1"/></li>
+	   <!--                   <li><img src="img/good2.jpg"/></li>
+	                     <li><img src="img/good3.jpg"/></li>
+	                     <li><img src="img/good4.jpg"/></li>
+	                     <li><img src="img/good5.jpg"/></li> -->
+	                 </ul>
+	             </div>
+	             <!-- <div id="smallimgs">
+	                 <ul>
+	                     <li style="border-color: #cc6688"><img src="img/good1.jpg" data-count="0"/></li>
+	                     <li><img src="img/good2.jpg" data-count="1"/></li>
+	                     <li><img src="img/good3.jpg" data-count="2"/></li>
+	                     <li><img src="img/good4.jpg" data-count="3"/></li>
+	                     <li><img src="img/good5.jpg" data-count="4"/></li>
+	                 </ul>
+	             </div> -->
+	      </div >
+  		  <div class="ae-grid__item item-sm--auto item-lg-3">
+  		    <div id="imgtxt">
+  	            <h2 id="name"></h2>
+
+  	            <!-- <div id="description" class="goodinfo">Best price!</div> -->
+  	            <div class="goodinfo"><span id="price" class="price"></span></div>
+  	            <div class="goodinfo">Available&nbsp;&nbsp;&nbsp;&nbsp;<span id="qty" class="price">qty</span></div>
+  <!-- 	            <div class="goodinfo" id="size">size&nbsp;&nbsp;&nbsp;&nbsp;
+  	                <p class="block">S</p>
+
+  	                <p class="block">M</p>
+
+  	                <p class="block">L</p></div>
+  	            <div class="goodinfo" id="color">color&nbsp;&nbsp;&nbsp;&nbsp;<p class="block">Pink</p>
+
+  	                <p class="block">White</p>
+
+  	                <p class="block">Black</p></div> -->
+  	            <div class="goodinfo">Quantity&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" min="1" id="num" value="1"/></div>
+  	            <div class="goodinfo"><input type="button" value="Buy" class="btngood" id="btnbuy"/>&nbsp;&nbsp;&nbsp;&nbsp;<input
+  	                    type="button" value="Add cart" class="btngood" id="btnadd" /></div>
+              <div class="describ">
+                <p>I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.</p>
+              </div>
+  	        </div>
+  		  </div>
+		  </div>
+	  </div>
+    </section>
+    <footer class="ae-container-fluid rk-footer ">
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
+          <ul class="rk-menu rk-footer-menu">
+            <li class="rk-menu__item"><a href="Home.html" class="rk-menu__link">About</a>
+            </li>
+            <li class="rk-menu__item"><a href="Home.html" class="rk-menu__link">Docs</a>
+            </li>
+            <li class="rk-menu__item"><a href="Home.html" class="rk-menu__link">Contact</a>
+            </li>
+          </ul>
+          <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">2018 MANGO MAGIC </span>All Right Reserved.</p>
+        </div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center"><a href="#0" class="rk-social-btn ">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
+            </svg></a><a href="#0" class="rk-social-btn ">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
+            </svg></a><a href="#0" class="rk-social-btn ">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
+            </svg></a><a href="#0" class="rk-social-btn ">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-tumblr"></use>
+            </svg></a></div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
+          <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder"> <a href="#0" class="rk-dark-color ">z5084069@ad.unsw.edu.au </a><a href="#0" class="rk-dark-color ">z5096209@ad.unsw.edu.au </a></span></p>
+          <p class="rk-footer__text rk-footer__by">Theme by <a href="http://pixeden.com" class="ae-u-bolder">Walter and Joy</a></p>
+        </div>
+      </div>
+    </footer>
+
+	<!--显示高清大图-->
+	  <div id="showbigimg"><img src="img/good1.jpg" id="bigimg"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+	  
+    <script src="assets/js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+    <script src="js/product_app.js"></script>
+    <!-- <script src="js/good.js"></script> -->
+  </body>
+</html>

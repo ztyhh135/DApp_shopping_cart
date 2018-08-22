@@ -1,0 +1,20 @@
+/*home page style*/
+.show_zxr {width: 1100px;position: relative;}
+.show_zxr>ul {margin-left: -45px;}
+.show_zxr>ul>li {list-style: none; float: left;width: 100px;height: 30px;line-height: 30px;font-size: 15px;margin-top: 20px;text-align: center;}
+.show_zxr>ul>li> span {color:gainsboro;float: right}
+.showshangpin_zxr_ {cursor:pointer;padding:5px;background-color:#ffffff;width: 19%;position:relative;float: left;margin-left: 10px;margin-top: 25px;}
+.showshangpin_zxr_ img {width: 245px;}
+.showshangpin_zxr_  p {font-size: 15px;}
+.showshangpin_zxr_  .showshangpin_zxr_p {width: 100%;text-align: center;margin-top: 15px;color: #be202e; solid gainsboro}
+.showshangpin_zxr_ .showshangpin_zxr_img img{width: 40px;height: 40px;border: 1px solid #ffffff;cursor:pointer;}
+.showshangpin_zxr_ .showshangpin_zxr_img img:first-child {border:1px solid red}
+.showshangpin_zxr_:hover  {
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 700ms;
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 700ms;
+    overflow: hidden;
+    cursor:pointer;
+    box-shadow: 0px 0px 10px #828282;
+}

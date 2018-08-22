@@ -1,0 +1,120 @@
+@charset "utf-8";
+/*html,body,div,p,form,label,ul,li,dl,dt,dd,ol,img,button,b,em,strong,small,h1,h2,h3,h4,h5,h6{margin:0;padding:0;border:0;list-style:none;font-style:normal;}*/
+body{/*font-family:SimHei,'Helvetica Neue',Arial,'Droid Sans',sans-serif;*/
+	/*font-size:14px;color:#333;background:#f2f2f2;*/
+	font-family: Aileron,Helvetica,Arial,sans-serif;
+	line-height: 1.556;
+	font-size: 1.125rem;
+	color: #202020;
+	background:#f2f2f2;
+}
+/*a, a.link{color: inherit;text-decoration:none;font-weight:500;}
+a, a.link:hover{color:#666;}*/
+/*h1,h2,h3,h4,h5,h6{font-weight: normal;}*/
+/*头部开始*/
+/*.header{position:relative;width:100%;height:44px;background:#fff;border-bottom:1px solid #e0e0e0;}
+.header h1{font-size:16px;color:#333;height:44px;line-height:44px;display:block;text-align:center;}
+.header a{position: absolute;top:0;display:block;height:44px;line-height:44px;}
+.header a.back{left:0px;}
+.header a.back span{display:inline-block;width:25px;height:25px;margin:10px 5px;background: url("../img/icon/icon-back.png") no-repeat;background-size:100%;}
+.header .home{}*/
+/*头部结束*/
+
+input[type="checkbox"]{-webkit-appearance:none;outline: none;}
+input.check{background:url(../img/icon/icon_radio3.png) no-repeat center left;background-size:20px 20px;position:absolute;top:50%;left:10px;margin-top:-18px;width:20px;height:35px;}
+input.check:checked{background:url(../img/icon/icon_radio4.png) no-repeat center left;background-size:20px 20px;}
+input.goodsCheck:checked{background:url(../img/icon/icon_radio4.png) no-repeat center left;background-size:20px 20px;}
+input.check:checked{background:url(../img/icon/icon_radio4.png) no-repeat center left;background-size:20px 20px;}
+.checked{background:url(../img/icon/icon_radio4.png) no-repeat left center;background-size:20px 20px;position:absolute;top:50%;left:15px;margin-top:-18px;width:20px;height:35px;}
+
+/*尾部开始*/
+/*.footer .copyright{height:44px;line-height:44px;text-align:center;color:#848689;font-size:12px;}*/
+/*尾部结束*/
+
+/*for fliter*/
+/**** Isotope filtering ****/
+
+/*.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}*/
+/*.show_zxr{
+
+}*/
+.ul_style li{
+    list-style: none;
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+.ul_style li span{color: gainsboro;
+    float: right;}
+.ul_style li a:focus{
+	color: #be202e;
+}
+#container {
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: -0.2em;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.element {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #ffffff;
+    width: 18%;
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+    min-height: 300px;
+}
+/*.element img {
+    position: absolute;
+    margin: 0;
+}*/
+.element img{ width:100%; }
+.showshangpin_zxr_p{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 13px;
+}
+.element p{
+	font-family: 'HM Ampersand Regular','HelveticaNeue-Regular','Helvetica Neue Regular','Helvetica Neue','Helvetica','Arial','Sans-Serif';
+    font-weight: normal;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1px;
+    line-height: 18px;
+}
+.element:hover  {
+
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 700ms;
+
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 700ms;
+    overflow: hidden;
+    cursor:pointer;
+    box-shadow: 0px 0px 10px #828282;
+}
+
+/* The Magnificent Clearfix: nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }

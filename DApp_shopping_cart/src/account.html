@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Mango Magic</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/urku-ico.svg">
+    <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
+    <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
+    <link rel="stylesheet" href="assets/css/urku.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/personal.css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
+  </head>
+  <body class="top-fixed">
+    <div id="over" class="over"></div>
+    <div id="layout" class="loader"></div>
+    <section class="ae-container-fluid rk-main">
+          <div id="contentLeft">
+            <h2 class="person_h2">Personal Centre</h2>
+            <ul id="leftNavigation">
+              <li class="active">
+                  <a href="#" id="personal_useid"><i class="fa fa-envelope-o leftNavIcon"></i><span id="personal_uid_span">Email</span></a>
+                  <ul id = "tabs01">
+                      <li>
+                          <a href="javascript:void(0)" class="current"  onclick="App.handlePost()"><i class="fa fa-angle-right leftNavIcon"></i> Selling</a>
+                      </li>
+                      <li>
+                          <a href="javascript:void(0)" onclick="App.handleCart()"><i class="fa fa-angle-right leftNavIcon"></i> My Cart</a>
+                      </li>
+                      <li>
+                          <a href="javascript:void(0)" onclick="App.handleTrans()"><i class="fa fa-angle-right leftNavIcon"></i> Purchase History</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="clickable">
+                <a href="index.html"><i class="fa fa-home leftNavIcon"></i> Home</a>
+              </li>
+              <li class="clickable">
+                  <a href="javascript:logout()"><i class="fa fa-stop leftNavIcon"></i> Logout</a>
+              </li>
+            </ul>
+          </div>
+          <div id="contentRight">
+            <div class="main_div con">
+              <header class="htmleaf-header">
+                <h1>Selling product<span>Your Prouducts</span></h1>
+                <div class="Pt_list">
+                  <ul class="Pt_list_ul", id="item_list">
+                    <!-- show products detail -->
+
+                    <!-- <li>
+                      <div class="list_img">
+                        <img src="img/white.jpg">
+                      </div>
+                      <div class="list_detail">
+                        <h3>clot</h3>
+                        <p>wwww,jlkjfdlkajdfjlsdjfjlkadsjfljsd.</p>
+                        <a href="" class = "post_a">edit</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list_img">
+                        <img src="img/white.jpg">
+                      </div>
+                      <div class="list_detail">
+                        <h3>clot</h3>
+                        <p>wwww,jlkjfdlkajdfjlsdjfjlkadsjfljsd.</p>
+                        <a href="">edit</a>
+                      </div>
+                    </li> -->
+                  </ul>
+                </div>
+              </header>
+            </div>
+            <div class="main_div con">  
+            </div>
+            <div class="main_div con">
+              <header class="htmleaf-header">
+                <h1>Purchase History <span>Your Prouducts</span></h1>
+                <div class="Pt_list">
+                  <ul class="Pt_list_ul", id ="Transaction_record">
+                    <!-- purchase history detail -->
+
+                    <!-- <li>
+                      <div class="list_img">
+                        <img src="img/white.jpg">
+                      </div>
+                      <div class="list_detail">
+                        <h3>clot</h3>
+                        <p>wwww,jlkjfdlkajdfjlsdjfjlkadsjfljsd.</p>
+                        <a href="">edit</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list_img">
+                        <img src="img/white.jpg">
+                      </div>
+                      <div class="list_detail">
+                        <h3>clot</h3>
+                        <p>wwww,jlkjfdlkajdfjlsdjfjlkadsjfljsd.</p>
+                        <a href="">edit</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list_img">
+                        <img src="img/white.jpg">
+                      </div>
+                      <div class="list_detail">
+                        <h3>clot</h3>
+                        <p>wwww,jlkjfdlkajdfjlsdjfjlkadsjfljsd.</p>
+                        <a href="">edit</a>
+                      </div>
+                    </li> -->
+                  </ul>
+                </div>
+              </header>
+            </div>
+          </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="assets/js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.ssd-vertical-navigation.min.js"></script>
+    <script src="js/app_left.js"></script>
+    <script src="js/account_app.js"></script>
+  </body>
+</html>
+
+
+

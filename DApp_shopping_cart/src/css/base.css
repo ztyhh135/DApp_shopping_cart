@@ -1,0 +1,82 @@
+/*homepage style*/
+@charset "utf-8";
+body{
+	font-family: Aileron,Helvetica,Arial,sans-serif;
+	line-height: 1.556;
+	font-size: 1.125rem;
+	color: #202020;
+	background:#f2f2f2;
+}
+input[type="checkbox"]{-webkit-appearance:none;outline: none;}
+input.check{background:url(../img/icon/icon_radio3.png) no-repeat center left;background-size:20px 20px;position:absolute;top:50%;left:10px;margin-top:-18px;width:20px;height:35px;}
+input.check:checked{background:url(../img/icon/icon_radio4.png) no-repeat center left;background-size:20px 20px;}
+input.goodsCheck:checked{background:url(../img/icon/icon_radio4.png) no-repeat center left;background-size:20px 20px;}
+input.check:checked{background:url(../img/icon/icon_radio4.png) no-repeat center left;background-size:20px 20px;}
+.checked{background:url(../img/icon/icon_radio4.png) no-repeat left center;background-size:20px 20px;position:absolute;top:50%;left:15px;margin-top:-18px;width:20px;height:35px;}
+.ul_style li{
+    list-style: none;
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+.ul_style li span{color: gainsboro;
+    float: right;}
+.ul_style li a:focus{
+	color: #be202e;
+}
+#container {
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: -0.2em;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.element {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #ffffff;
+    width: 18%;
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    min-height: 380px;
+    margin-bottom: 10px;
+}
+.element img{ width:100%; }
+.showshangpin_zxr_p{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 13px;
+}
+.element p{
+	font-family: 'HM Ampersand Regular','HelveticaNeue-Regular','Helvetica Neue Regular','Helvetica Neue','Helvetica','Arial','Sans-Serif';
+    font-weight: normal;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1px;
+    line-height: 18px;
+}
+.element:hover  {
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 700ms;
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 700ms;
+    overflow: hidden;
+    cursor:pointer;
+    box-shadow: 0px 0px 10px #828282;
+}
+
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }

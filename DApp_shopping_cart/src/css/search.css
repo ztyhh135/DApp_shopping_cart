@@ -1,0 +1,25 @@
+/*search function style*/
+.bar5 {margin-left: 1em; position: relative; width: 300px; margin: 0 auto; }
+.bar5 input, button { border: none; outline: none; } 
+.bar5 input { width: 100%; height: 30px; padding-left: 13px; padding:1em;} 
+.bar5 button { height: 80%; width: 30px; cursor: pointer; position: absolute; }
+.bar5 {margin-top: -3em;margin-left: 1em;}
+.bar5 input, .bar5 button {
+    background: transparent;
+}
+.bar5 input {
+    border: 2px solid #a0a0a0;
+}
+.bar5 button {
+    top: 0;
+    right: 0;
+}
+.bar5 button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #a0a0a0;
+}
+.bar5 input:focus {
+    border-color: #311c24
+}
